@@ -1,0 +1,473 @@
+.App {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #4d4d4d;
+}
+
+h1 {
+  text-align: center;
+  color:rgba(250, 250, 250, 0.8)
+}
+
+a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: dodgerblue;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .links {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .loggedInContainer {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar button {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.navbar h1 {
+  text-align: right;
+  margin-right: 10px;
+  color: white;
+  font-weight: lighter;
+}
+
+/*Registration*/
+.center {
+  margin: center;
+}
+
+.formContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  background-color: dodgerblue;
+  border: 5px solid dodgerblue;
+  border-radius: 5px;
+}
+
+/* Login */
+.loginContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.loginContainer input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px;
+}
+
+.loginContainer button {
+  background-color: dodgerblue;
+  text-size-adjust: 12px;
+}
+
+.loginContainer input {
+  border: 2px solid dodgerblue;
+}
+
+.LoginButton {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 22px;
+  color: orange;
+  -webkit-text-stroke: 0.5px grey;
+  font-weight: 1000;
+}
+
+.LoginText {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 22px;
+  color: white;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.LoginInput {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 19px;
+  color: black;
+  text-align: center;
+}
+
+/*------------------Home-----------------*/
+/*Left and Right Side*/
+
+.leftSide {
+  flex: 50%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+}
+
+.rightSide {
+  flex: 50%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+/*Post*/
+.createPostPage {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer #inputCreatePost {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.formContainer button {
+  margin-top: 15px;
+  height: 40px;
+  border: none;
+  background-color: orange;
+  border-radius: 5px;
+  align-content: center;
+  color: white;
+}
+
+.formContainer button:hover {
+  cursor: pointer;
+  background-color: orangered;
+}
+
+span {
+  color: white;
+}
+
+.postPage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.post {
+  width: 600px;
+  height: 100px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  border: 1px solid lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.post:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+
+.post .title {
+  flex: 20%;
+  border-bottom: 1px solid lightgray;
+  background-color: dodgerblue;
+  display: grid;
+  place-content: center;
+  color: white;
+}
+
+.post .body {
+  flex: 60%;
+  display: grid;
+  place-content: center;
+  grid-template-columns: 90% 10%;
+  text-align: left;
+  background-color: lightgrey;
+}
+
+.titled {
+  margin-left: 25px;
+}
+
+.post :hover {
+  background-color: orange;
+}
+
+.poster {
+  width: 600px;
+  height: 100px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  border: 1px solid lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: sticky;
+  top: 0;
+}
+
+.poster:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+
+.poster .title {
+  flex: 20%;
+  border-bottom: 1px solid lightgray;
+  background-color: dodgerblue;
+  display: grid;
+  place-content: center;
+  color: white;
+}
+.poster .title:hover{
+  background-color: orangered;
+}
+.poster .body:hover{
+  background-color: orangered;
+}
+.postText {
+  margin-left: 10px;
+}
+
+.poster .body {
+  flex: 60%;
+  display: grid;
+  place-content: center;
+  grid-template-columns: 90% 10%;
+  text-align: left;
+  background-color: orange;
+}
+
+/*.poster :hover {
+  background-color: orangered;
+}*/
+
+.poster .footer {
+  flex: 20%;
+  border-top: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  background-color: dodgerblue;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/*.poster .footer :hover {
+  background-color: dodgerblue;
+}*/
+
+
+/*Footer*/
+.post .footer {
+  flex: 20%;
+  border-top: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  background-color: dodgerblue;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.post .footer :hover {
+  background-color: dodgerblue;
+}
+
+.footer .username {
+  flex: 50%;
+}
+
+.footer .buttons {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/*Individual Post*/
+#individual {
+  height: 500px;
+  width: 600px;
+  margin-top: 5px;
+}
+
+#individual .title{
+  font-size: 30px;
+}
+
+#individual .footer {
+  font-size: 30px;
+  flex: 20%;
+  vertical-align: middle;
+  align-items: center;
+  flex-direction: row, column;
+  justify-content: space-around;
+  align-items: stretch, flex-start, flex-end, center;
+}
+
+#individual .body {
+  font-size: 25px;
+}
+
+/*Botones completdas*/
+.completed {
+  background-color: lightgreen;
+}
+
+.completed :hover {
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+
+.uncompleted {
+  background-color: yellow;
+}
+
+.uncompleted :hover {
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+
+/*Classif Buttons*/
+.classifier {
+  flex: 20%;
+  display:inline;
+  place-content: center;
+}
+
+.classif {
+  width: 120px;
+}
+
+.classifWhite {
+  width: 120px;
+}
+
+.classifWhite:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+
+.classifOrange {
+  width: 120px;
+  background-color: orange;
+}
+
+.classifYellowOrange{
+  width: 120px;
+  font-size: 11px;
+  background-color: orange
+}
+
+.classifYellowOrange:hover{
+  background-color: orange;
+  cursor: pointer;
+}
+
+.classif-yellow {
+  width: 120px;
+  font-size: 11px
+}
+
+.classif-yellow:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+
+/*Comments*/
+.rightSide .addCommentContainer {
+  flex: 20%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 25px;
+}
+
+/*Delete Button*/
+.delete {
+  background-color: pink;
+}
+
+.delete:hover {
+  cursor: pointer;
+  background-color: #e75480;
+}
+
+/*Flag Buttons*/
+.blue {
+  color: blue;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.red {
+  color: red;
+}
+
+.deleteIcon {
+  color: red;
+}
+
+.small {
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.small:hover {
+  background-color: orangered;
+}
